@@ -1,28 +1,28 @@
-Requirements:
+##Requirements:
 textacy
 spacy
 
 #To install ,cd to directory containing the 'requirements' file and run the following command in terminal:
 >>> pip install -r requirements
 
-Spacy English Models:
+###Spacy English Models:
 en ~ 1 GB, suitable for memory >= 8.0 GB
 en_core_web_sm ~ 50 MB suitable for memory < 8.0 GB
 # Install by:
 python -m spacy download en
 
-# Usage in Python
+### Usage in Python
 import spacy
 nlp = spacy.load('en')
 doc = nlp(u'This is a sentence.')
 
 Spacy and Textacy credit goes to the respective authors. Read more here:
-Spacy : https://spacy.io/docs/usage/
+###Spacy : https://spacy.io/docs/usage/
 
-Textacy : http://textacy.readthedocs.io
+###Textacy : http://textacy.readthedocs.io
 These are really good tools!
 
-USAGE:
+##USAGE:
 >>> import keyPhrases
 >>> keyPhrases.getPhrases(text, op_file, min_ngrams, max_ngrams, topn)
 # text = input text, need not be preprocesses as this will be taken care of by textacy
