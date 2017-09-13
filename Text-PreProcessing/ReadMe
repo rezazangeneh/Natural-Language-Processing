@@ -1,0 +1,13 @@
+Function to process raw texts.
+Following functions supported:
+1. Remove Non-Ascii characters
+2. Remove Numerical Data:
+  # 0: don't remove
+	# 1: remove basic numbers ex. xxxx 789 xxxx will be removed, 7xx98 won't
+	# 2: remove all numbers 
+3. Remove Punctuation Marks:
+  # removePunct = 0 : No removal
+	# removePunct = 1 : Basic removal, preserve , . ! ' "
+	# removePunct = 2 : Extreme, remove all
+4. Remove stop words(redundant words) and/or cuss words/slang words. Personalizable.
+5. Encode text into a particular format, eg. UTF-8
