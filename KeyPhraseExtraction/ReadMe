@@ -16,10 +16,11 @@ import spacy
 nlp = spacy.load('en')
 doc = nlp(u'This is a sentence.')
 
-Spacy credit to: https://spacy.io/docs/usage/
+Spacy and Textacy credit goes to the respective authors. Read more here:
+Spacy : https://spacy.io/docs/usage/
 
 Textacy : http://textacy.readthedocs.io
-#great tools!
+These are really good tools!
 
 USAGE:
 >>> import keyPhrases
