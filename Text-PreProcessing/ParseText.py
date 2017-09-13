@@ -12,10 +12,10 @@ def preprocess(text, removeNum = 0, removePunct = 0, removeStopWords = 0, remove
 	# 0: don't remove
 	# 1: remove basic numbers ex. xxxx 789 xxxx will be removed, 7xx98 won't
 	# 2: remove all numbers  
-	if removeNum:
+	if removeNum == 1:
 		text = re.sub(r'[^a-zA-Z]+[0-9\.\,]+[^a-zA-Z]+', ' ', text)
-		if removeNum == 2:
-			text = re.sub(r'[0-9]',' ',text)
+	if removeNum == 2:
+		text = re.sub(r'[0-9]','',text)
 
 	# removePunct = 0 : No removal
 	# removePunct = 1 : Basic removal, preserve , . ! ' "
@@ -41,8 +41,9 @@ def preprocess(text, removeNum = 0, removePunct = 0, removeStopWords = 0, remove
 
 	text = re.sub(r'(\s)+', ' ', text)
 	return text
-
+'''
 while 1:
 	file = raw_input("Choose a file: ")
 	text = open(file).read()
-	print preprocess(text,):
+	print preprocess(text,)
+'''	
