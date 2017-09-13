@@ -11,3 +11,28 @@ Following functions supported:
 	# removePunct = 2 : Extreme, remove all
 4. Remove stop words(redundant words) and/or cuss words/slang words. Personalizable.
 5. Encode text into a particular format, eg. UTF-8
+
+Usage:
+ParseText.preprocess(text, args)
+args:
+removeNum = 0/1/2	default : 0
+removePunct = 0/1/2 	default : 0
+removeStopWords = 0/1 	default : 0
+removeCussWords = 0/1 	default : 0
+encode = ''		default : None
+
+Example:
+>>> import ParseText
+>>> text = "This is some dum3my text. This has \n some stray characters. Other punctuation marks: @#$%^ and som\ne other langauge constructs 4500"
+
+>>> text
+'This is someone's dum3my text. This has \n some stray characters. Other punctuation marks: @#$%^ and som\ne other langauge constructs  4500 '
+
+>>> ParseText.preprocess(text, removeNum =1)
+'This is someone's dum3my text. This has some stray characters. Other punctuation marks: @#$%^ and som e other langauge constructs '
+
+>>> ParseText.preprocess(text, removeNum =2)
+'This is someone's dummy text. This has some stray characters. Other punctuation marks: @#$%^ and som e other langauge constructs '
+
+>>> ParseText.preprocess(text, removePunct=1)
+'This is someone's dum3my text. This has some stray characters. Other punctuation marks and som e other langauge constructs 4500 '
