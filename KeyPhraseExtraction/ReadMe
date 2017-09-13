@@ -1,4 +1,23 @@
-Requirements (Latest Version):
+Requirements:
 textacy
-en_core_web_sm
 spacy
+
+#To install ,cd to directory containing the 'requirements' file and run the following command in terminal:
+>>> pip install -r requirements
+
+Spacy English Models:
+en ~ 1 GB, suitable for memory >= 8.0 GB
+en_core_web_sm ~ 50 MB suitable for memory < 8.0 GB
+# Install by:
+python -m spacy download en
+
+# Usage in Python
+import spacy
+nlp = spacy.load('en')
+doc = nlp(u'This is a sentence.')
+
+Spacy credit to: https://spacy.io/docs/usage/
+
+Textacy : http://textacy.readthedocs.io
+#great tools!
+
