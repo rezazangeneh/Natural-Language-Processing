@@ -21,3 +21,13 @@ Spacy credit to: https://spacy.io/docs/usage/
 Textacy : http://textacy.readthedocs.io
 #great tools!
 
+USAGE:
+>>> import keyPhrases
+>>> keyPhrases.getPhrases(text, op_file, min_ngrams, max_ngrams, topn)
+# text = input text, need not be preprocesses as this will be taken care of by textacy
+# op_file = filename to write output to, default 'output.txt'
+# min_ngrams: min n-word phrases to be fetched. default 1  
+#       2-gram words: just because, there are, 
+#       3-gram words: because, just, 
+# max_ngrams: max n-word phrases; default 2
+# topn: top n results to fetch; default 10
