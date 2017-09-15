@@ -38,7 +38,7 @@ def preprocess(text, removeNum = 0, removePunct = 0, removeStopWords = 0, remove
 
 	#encode in the given encoding, eg. UTF-8, UTF-7, etc
 	if encode:
-		text = text.encode(encode)
+		text = text.decode(encode)
 
 	text = re.sub(r'(\s)+', ' ', text)
 	return text
