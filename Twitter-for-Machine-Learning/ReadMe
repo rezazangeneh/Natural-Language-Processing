@@ -1,0 +1,20 @@
+Twitter is a collection of a lot of data that, if harvested correctly, can decipher many hidden patterns.
+Using this Twitter data(tweets) directly is not a wise decision, a lot of preprocessing is needed to get sensible data.
+
+Tool 1: process Tweets:
+Usage:
+>>> from processTweets import processTweets
+
+>>>processTweets(text)
+
+Features:
+1. Remove Twitter Shorthand (A standard list by FBI, total of 2k entries, all of which haven't been added yet)
+2. Non Ascii character removal
+3. Remove mentions eg. @bumboola is removed
+4. Remove certain punctuation marks, carefully curated to retain emoji-puncts
+5. Normalize whitespace
+6. Unpacking contractions
+7. Replace numbers by a keyword
+8. Normalization, PorterStemmer used
+9. Remove common Stop Words
+
