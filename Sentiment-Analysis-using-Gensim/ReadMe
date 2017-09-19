@@ -1,0 +1,15 @@
+Basic Sentiment Analysis.
+Use of Gensim for Doc2Vec to get vectors from a labelled corpus, here the sentiment, 
+Sentiment = 0/1:
+  0 : Negative
+  1 : Positive 
+  (to do: expand range to non-binary values)
+
+Models used: 
+LinearSVC, 
+SVR,
+RandomForestClassifier,
+GaussianNB,
+MultinomialNB,
+DecisionTreeClassifier
+  
