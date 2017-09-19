@@ -13,3 +13,6 @@ GaussianNB,
 MultinomialNB,
 DecisionTreeClassifier
   
+Run:
+python modelTrain.py
+python modelTest.py
